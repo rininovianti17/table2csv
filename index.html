@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="table2csv.js"></script>
+    <style> body{
+        font-family: sans-serif;
+    }
+    table, th, td{
+        border-collapse: collapse;
+        border: 1px solid black;
+        padding: 10px;
+    }
+     tr:nth-child(even){
+         background-color: #dddddd;
+     }
+     th {
+         background-color: #5a5a5a;
+         color: white;
+     }
+    </style>
+    <body>
+        <button id="downloadCSV"> Export to CSV</button>
+        <br><br>
+        <table id="example-table">
+            <thead>
+                <tr>
+                    <th> Nama </th>
+                    <th> id </th>
+                    <th> position </th>
+                    <th> age  </th>
+                    <th> telp </th>
+                    <th> alamat </th>
+                    <th> email </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr> 
+                    <td> rini novianti </td>
+                    <td> 378828 </td>
+                    <td> IT development </td>
+                    <td> 20 </td>
+                    <td> 085703634001</td>
+                    <td> tebet barat raya IX </td>
+                    <td> rininovianti171015@gmail.com</td>
+
+                 </tr>
+                 <tr> 
+                    <td> hafizhoe haqqi  </td>
+                    <td> 337399 </td>
+                    <td> IT business </td>
+                    <td> 20 </td>
+                    <td> 085829129200</td>
+                    <td> cigaraksa tangerang banten </td>
+                    <td> hafizhoeashrafhaqqi@gmail.com </td>
+
+                 </tr>
+                 <tr> 
+                    <td> ilham gumilang  </td>
+                    <td> 3273718 </td>
+                    <td> IT technical programmers </td>
+                    <td> 20 </td>
+                    <td> 081332328299</td>
+                    <td> kampung melayu besar 2  </td>
+                    <td> ilhamgumilang123@gmail.com </td>
+
+                 </tr>
+                 <tr> 
+                    <td> putri arinis  </td>
+                    <td> 3622728 </td>
+                    <td> digital marketing project  </td>
+                    <td> 20 </td>
+                    <td> 0827221918191</td>
+                    <td> jakarta pusat  </td>
+                    <td> putriarinis@gmail.com </td>
+
+                 </tr>
+                 <tr> 
+                    <td> khairudin malik  </td>
+                    <td> 335177 </td>
+                    <td> digital marketinhg desain project  </td>
+                    <td> 20 </td>
+                    <td> 08262728428899</td>
+                    <td> jakarta timur </td>
+                    <td> khairudinmalik@gmail.com</td>
+
+
+                 </tr>
+                 <tr> 
+                    <td> imron syaifudin </td>
+                    <td> 323718 </td>
+                    <td> technical desain marketing  </td>
+                    <td> 20 </td>
+                    <td> 0812723628817</td>
+                    <td> pondok labu jakarta atimur</td>
+                    <td> imran123@gmail.com </td>
+
+                 </tr>
+                 <tr> 
+                    <td> nisrina nabilah  </td>
+                    <td> 162271</td>
+                    <td> public relation technical  </td>
+                    <td> 20 </td>
+                    <td> 08132282882992</td>
+                    <td> tangerang selatan  </td>
+                    <td> nisrinanabilah@gmail.com</td>
+
+                 </tr>
+                 <tr> 
+                    <td> mega widia putri  </td>
+                    <td> 37112</td>
+                    <td> marketing telekomunikasi  </td>
+                    <td> 20 </td>
+                    <td> 0856187818171</td>
+                    <td> cibodas raya tangerang </td>
+                    <td> megawidiaputri@gmail.com</td>
+
+                 </tr>
+                 <tr> 
+                    <td> diendilafadilah  </td>
+                    <td> 33526 </td>
+                    <td> programing basic tecknisi </td>
+                    <td> 20 </td>
+                    <td> 082627272828</td>
+                    <td> poris raya barat  </td>
+                    <td> diendilafadhilah@gmail.com</td>
+
+                 </tr>
+                 <tr> 
+                    <td> riva irvana </td>
+                    <td> 32727 </td>
+                    <td> it development </td>
+                    <td> 20 </td>
+                    <td> 0813832929299</td>
+                    <td> kota bumi 2 </td>
+                    <td> rivairvana@gmail.com</td>
+
+                 </tr>
+                 <tr> 
+                    <td> hapsari yuris  </td>
+                    <td> 31738 </td>
+                    <td> it development </td>
+                    <td> 20 </td>
+                    <td> 08517282892</td>
+                    <td> cinere banten </td>
+                    <td> hapsarijuris@gmail.com</td>
+
+                 </tr>
+                 <tr> 
+                    <td> nabila faturahmi  </td>
+                    <td> 38383 </td>
+                    <td> project division </td>
+                    <td> 20 </td>
+                    <td> 0828292002009</td>
+                    <td> tangerang tengah  </td>
+                    <td> nabilahfaturahmi@gmail.com</td>
+
+                 </tr>
+                 <tr> 
+                    <td> yosi juliana </td>
+                    <td> 32728 </td>
+                    <td> jaringan telekomunikasi teknisi  </td>
+                    <td> 20 </td>
+                    <td> 08528828282</td>
+                    <td> sepatan raya banten  </td>
+                    <td> yosijuliana@gmail.com</td>
+
+                 </tr>
+                 <tr> 
+                    <td> dyah nurhidayati  </td>
+                    <td> 32727 </td>
+                    <td> networking hrd</td>
+                    <td> 20 </td>
+                    <td> 0851618193823</td>
+                    <td> tangerang banten </td>
+                    <td> dyahnurhidayati@gmail.com</td>
+
+                 </tr>
+
+                 
+
+                 
+
+            </tbody>
+        </table>
+        <script>
+            var option ={
+                'separator':",",
+                "filename":"employees.csv"
+            }
+            $("#downloadCSV").on('click', function() {
+                $('#example-table').table2csv(option);
+                
+            });
+            $("#downloadXLSX").on('click', function() {
+                $('#example-table').table2xlsx(option);
+            });
+        </script>
+    </body>
+
+</head>
+</html>
